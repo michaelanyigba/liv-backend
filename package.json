@@ -1,5 +1,5 @@
 {
-  "name": "chat-app",
+  "name": "liv-app",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -11,12 +11,22 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.3",
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "buffer": "^6.0.3",
+    "chat-app": "file",
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "glob": "^11.0.0",
     "jsonwebtoken": "^9.0.2",
+    "liv-app": "file:",
     "mongoose": "^8.5.2",
+    "multer": "^1.4.5-lts.1",
+    "npmlog": "^7.0.1",
+    "rimraf": "^6.0.1",
     "socket.io": "^4.7.5"
   },
   "devDependencies": {
