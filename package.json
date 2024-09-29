@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "liv-app",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "description": "",
   "dependencies": {
     "axios": "^1.7.3",
-    "backend": "file:",
+    "backend": "file:./backend",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "buffer": "^6.0.3",
