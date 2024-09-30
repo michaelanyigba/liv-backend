@@ -41,7 +41,7 @@ app.use("/api/articles", articlesRoutes);
 app.use("/api/post", postRoutes); 
 
 app.get("/", (req, res)=>{
-    res.json({message: "hello from backedn"})
+    res.json({message: "hello from backend"})
 })
 
 server.listen(PORT, () => {
