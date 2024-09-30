@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["https://fronten-yjql.onrender.com"],
+    origin: ["https://fronten-yjql.onrender.com", "https://admin-thzq.onrender.com"],
     methods: ["GET", "POST"], // HTTP methods you want to allow
     credentials: true,
   },
