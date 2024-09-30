@@ -6,8 +6,8 @@ import bodyParser from "body-parser"
 dotenv.config()
 
 const corsOptions = {
-    origin: 'https://admin-thzq.onrender.com',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    origin: ['https://admin-thzq.onrender.com', 'https://fronten-yjql.onrender.com'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true // Allow cookies if you're sending them
   };
 const __filename = fileURLToPath(import.meta.url);
