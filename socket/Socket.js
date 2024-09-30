@@ -10,7 +10,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: ["https://fronten-yjql.onrender.com"],
-    methods: ["GET", "POST", "PUT", "DELETE"], // HTTP methods you want to allow
+    methods: ["GET", "POST"], // HTTP methods you want to allow
     credentials: true,
   },
 });

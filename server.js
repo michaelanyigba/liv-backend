@@ -5,6 +5,11 @@ import path from "path"
 import bodyParser from "body-parser"
 dotenv.config()
 
+const corsOptions = {
+    origin: 'https://admin-thzq.onrender.com',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    credentials: true // Allow cookies if you're sending them
+  };
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename)
 
@@ -29,7 +34,7 @@ import { fileURLToPath } from "url"
 
 app.use(express.json());
 app.use(cookieParser())
-app.use(cors());    
+app.use(cors(corsOptions));    
 app.use(bodyParser.json());
 
 app.use("/api/auth", authRoutes); //
