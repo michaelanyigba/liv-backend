@@ -4,9 +4,9 @@ import { deleteUser, getAllUsers, getOnlyAdmin, getSingleUser, getUsersForSideba
 import { getUserProfile } from "../controllers/auth.controller.js";
 const router = express.Router();
 
-router.get("/", protectRoute, getUsersForSidebar)
-router.get("/all", protectRoute, getAllUsers)
-router.get("/admin", protectRoute, getOnlyAdmin)
+router.get("/", getUsersForSidebar)
+router.get("/all", getAllUsers)
+router.get("/admin", getOnlyAdmin)
 router.get("/find/:id", getSingleUser)
 router.put("/update/:id", updateUser)
 router.delete("/deleteUser/:id", deleteUser)
